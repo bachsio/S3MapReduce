@@ -85,8 +85,8 @@ public class S3MapReduce  extends Configured implements Tool {
         Job job = new org.apache.hadoop.mapreduce.Job();
         job.setJarByClass(S3MapReduce.class);
         job.setJobName("S3MapReduce");
-        job.getConfiguration().set("fs.s3n.awsAccessKeyId", "AKIAIQZZJJHP3ZWYM7GQ");
-        job.getConfiguration().set("fs.s3n.awsSecretAccessKey","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");
+        job.getConfiguration().set("fs.s3n.awsAccessKeyId", "awsaccesskey");
+        job.getConfiguration().set("fs.s3n.awsSecretAccessKey","awssecretaccesskey");
         job.getConfiguration().set("fs.default.name","s3n://com.spnotes.hadoop.input.books");
 
         System.out.println("Input path " + args[0]);
